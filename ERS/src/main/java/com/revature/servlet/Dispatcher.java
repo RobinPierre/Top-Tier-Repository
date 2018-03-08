@@ -15,7 +15,7 @@ public class Dispatcher {
 		}
 		else if(request.getCookies().length >= 4){
 			establishCookies(request, response);
-			System.out.println(request.getRequestURI());
+			System.out.println(request.getRequestURI() + ": dispatcher");
 			switch(request.getRequestURI()) {
 			case "/ERS/reimburse.AJAX":
 			case "/ERS/html/reimburse.AJAX":

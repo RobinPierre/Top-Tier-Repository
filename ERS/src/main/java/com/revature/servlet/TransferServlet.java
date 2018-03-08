@@ -30,6 +30,12 @@ public class TransferServlet extends HttpServlet {
 		
 
 	}
+	
+	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.getRequestDispatcher((String)Dispatcher.send(request, response)).include(request, response);
+		
+
+	}
 
 
 
