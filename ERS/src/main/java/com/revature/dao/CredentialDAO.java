@@ -25,7 +25,7 @@ public class CredentialDAO implements ICredentialDAO {
 	@Override
 	public Credential isValid(Credential credential) {
 		Credential temp;
-			temp = getCredential(credential.getUsername());
+		temp = getCredential(credential.getUsername());
 		if(temp != null && temp.getPassword().equals(credential.getPassword()))
 			return temp;
 		return null;
